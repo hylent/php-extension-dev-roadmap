@@ -1,0 +1,5 @@
+ARG_ENABLE("foo", "enable foo support", "no");
+
+if (PHP_FOO != "no") {
+    EXTENSION("foo", "foo.c");
+}
